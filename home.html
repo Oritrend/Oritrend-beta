@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oritrend Beta – Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #FFFDF6;
+      color: #1A1A1A;
+    }
+
+    /* Top Bar */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #FFD700;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 18px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 22px;
+      font-weight: 800;
+      margin: 0;
+      color: #1A1A1A;
+    }
+
+    header .icons span {
+      margin-left: 12px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    /* Feed Area */
+    main {
+      margin-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    .create-post {
+      background: #fff;
+      margin: 12px;
+      padding: 12px;
+      border-radius: 14px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+
+    .create-post input {
+      width: 100%;
+      border: none;
+      outline: none;
+      border-radius: 30px;
+      padding: 10px 14px;
+      background: #FFF8DC;
+    }
+
+    .post-actions {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #E6B800;
+    }
+
+    .post {
+      background: #fff;
+      margin: 12px;
+      padding: 12px;
+      border-radius: 14px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+
+    .post .creator {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .creator img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .creator .name {
+      font-weight: 600;
+    }
+
+    .creator .time {
+      font-size: 12px;
+      color: #999;
+    }
+
+    .post p {
+      margin: 10px 0;
+    }
+
+    .reactions {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #999;
+    }
+
+    /* Bottom Nav */
+    nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #fff;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+    }
+
+    nav span {
+      font-size: 20px;
+      color: #E6B800;
+    }
+
+    nav span.active {
+      color: #FFD700;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Oritrend</h1>
+    <div class="icons">
+      <span>🔍</span>
+      <span>🔔</span>
+      <span>👤</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="create-post">
+      <input type="text" placeholder="What's on your mind?" />
+      <div class="post-actions">
+        <span>🖼️ Photo</span>
+        <span>🎥 Video</span>
+        <span>🎵 Music</span>
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="creator">
+        <img src="https://via.placeholder.com/40" alt="Creator">
+        <div>
+          <div class="name">DJ Soundman 🌍</div>
+          <div class="time">2h ago</div>
+        </div>
+      </div>
+      <p>Just dropped my latest Afrobeat mix! Let’s make it trend 🔥 #OritrendVibes</p>
+      <div class="reactions">
+        <span>👍 120</span>
+        <span>💬 45</span>
+        <span>🔁 10</span>
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="creator">
+        <img src="https://via.placeholder.com/40" alt="Creator">
+        <div>
+          <div class="name">Lola Visuals 🎥</div>
+          <div class="time">5h ago</div>
+        </div>
+      </div>
+      <p>My new short film “Golden City” is out now! Let’s support creatives everywhere 🌍💛</p>
+      <div class="reactions">
+        <span>👍 230</span>
+        <span>💬 70</span>
+        <span>🔁 33</span>
+      </div>
+    </div>
+  </main>
+
+  <nav>
+    <span class="active">🏠</span>
+    <span>🔎</span>
+    <span>➕</span>
+    <span>🔔</span>
+    <span>👤</span>
+  </nav>
+</body>
+      </html>
