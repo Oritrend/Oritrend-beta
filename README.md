@@ -1,2 +1,2 @@
 Oritrend-beta
-Global Creator Showcase Platform
+<button onclick="window.location.href='home.html'">Continue</button>
