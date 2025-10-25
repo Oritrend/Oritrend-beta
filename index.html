@@ -1,2 +1,97 @@
 Oritrend-beta
 <button onclick="window.location.href='home.html'">Continue</button>
+<!-- Explore & Profile Pages -->
+<div id="explorePage" class="hidden">
+  <h2>🔥 Trending Creators</h2>
+  <div class="trending">
+    <div class="creator">
+      <img src="https://i.imgur.com/QJ6N8F2.jpg" class="avatar">
+      <div>
+        <h3>@AfroBeatsKing</h3>
+        <p>Musician • 120K followers</p>
+      </div>
+    </div>
+    <div class="creator">
+      <img src="https://i.imgur.com/n3X8Efj.jpg" class="avatar">
+      <div>
+        <h3>@ArtByMaya</h3>
+        <p>Digital Artist • 89K followers</p>
+      </div>
+    </div>
+    <div class="creator">
+      <img src="https://i.imgur.com/ssXOE1p.jpg" class="avatar">
+      <div>
+        <h3>@FilmMakerLeo</h3>
+        <p>Director • 72K followers</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>📈 Trending Hashtags</h3>
+  <ul class="hashtags">
+    <li>#OritrendVibes</li>
+    <li>#CreativeAfrica</li>
+    <li>#MusicForAll</li>
+    <li>#FilmMakersHub</li>
+  </ul>
+</div>
+
+<div id="profilePage" class="hidden">
+  <div class="profile-header">
+    <img src="https://i.imgur.com/9qv3YbK.jpg" class="avatar">
+    <div>
+      <h3>@AbdullateefMashood</h3>
+      <p>Founder of Oritrend 🌍</p>
+      <small>Followers: 2.3K • Following: 150</small>
+    </div>
+  </div>
+  <h4>Your Posts</h4>
+  <div class="feed">
+    <div class="post">
+      <p>Welcome to Oritrend Beta! Let’s empower global creators 💛</p>
+    </div>
+  </div>
+</div>
+
+<style>
+.hidden { display: none; }
+.trending .creator {
+  display: flex;
+  align-items: center;
+  background: #fffbea;
+  border-radius: 14px;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.trending .creator img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.hashtags li {
+  background: #f5b800;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 12px;
+  display: inline-block;
+  margin: 4px;
+}
+.profile-header {
+  display: flex;
+  align-items: center;
+  background: #fffbea;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+</style>
+
+<script>
+// Page navigation
+function showPage(page) {
+  document.querySelectorAll('.feed, #explorePage, #profilePage').forEach(el => el.classList.add('hidden'));
+  document.querySelector(page).classList.remove('hidden');
+}
+</script>
