@@ -1,1 +1,69 @@
 <button onclick="window.location.href='home.html'">Continue</button>
+<!-- Post Creator Section -->
+<div class="create-post">
+  <textarea id="newPostText" placeholder="Share something creative..."></textarea>
+  <div class="post-actions">
+    <button onclick="addPost()">Post</button>
+  </div>
+</div>
+
+<script>
+function addPost() {
+  const feed = document.querySelector('.feed');
+  const text = document.getElementById('newPostText').value.trim();
+  if (text !== "") {
+    const post = document.createElement('div');
+    post.className = 'post';
+    post.innerHTML = `
+      <div class="post-header">
+        <img src="https://i.imgur.com/9qv3YbK.jpg" class="avatar">
+        <div>
+          <h3>@${'NewCreator'}</h3>
+          <p>Just now</p>
+        </div>
+      </div>
+      <p class="post-text">${text}</p>
+      <div class="post-actions">
+        <button>❤️ Like</button>
+        <button>💬 Comment</button>
+        <button>🔗 Share</button>
+      </div>
+    `;
+    feed.prepend(post);
+    document.getElementById('newPostText').value = "";
+  }
+}
+</script>
+
+<style>
+.create-post {
+  background: #fffbea;
+  border-radius: 14px;
+  padding: 15px;
+  margin: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.create-post textarea {
+  width: 100%;
+  border: none;
+  resize: none;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  font-size: 15px;
+  background: #fff;
+}
+.create-post .post-actions button {
+  background: #f5b800;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.create-post .post-actions {
+  margin-top: 10px;
+  text-align: right;
+}
+</style>
